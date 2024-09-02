@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./index.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+      colors: {
+        'post': '#ff6d2c',
+        'heroColor': '#E0F8F2',
+        'heroDeep': '#78aea0',
+      }, 
+      boxShadow: {
+         'post_shadow': '2px 2px 0px 2px black',
+      },
+    },
+      },
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+
+    <!--Navbar section-->
+    <nav class="flex list-none w-screen p-10">
+        <img src="/logo/logo.png" class="w-[200px] ml-10 mt-[-40px] cursor-pointer" alt="" srcset="">
+        <li class="ml-[700px]"><a href="">Resources</a></li>
+        <li class="ml-12"><a href="">Sucess stories</a></li>
+        <li class="ml-12"><a href="">Company</a></li>
+        <li class="ml-12"><a href="">Pricing</a></li>
+        <li class="ml-12"><a href=""><button class="border border-black px-4 py-1 rounded-lg shadow-post_shadow hover:bg-post duration-500 hover:text-white">Login</button></a></li>
+        <li class="ml-12"><a href=""><button class="px-5 py-1.5 rounded-lg bg-post text-white shadow-post_shadow border border-black hover:bg-white duration-500 hover:text-black">Create free account</button></a></li>
+    </nav>
+    <!--Nav section done-->
+
+
+    <!--Hero Section-->
+    <!--First I have to declare two different main div, one is for left and one for right-->
+    <div class="w-screen flex flex-row bg-heroColor px-16 py-10">
+
+      <div class="w-[60%] p-8"> <!--Left Side Section-->
+        <h1 class="text-8xl font-bold relative">Meet your <br> <span class="font-extrabold italic text-heroDeep">favourite</span> new (old) marketing channel.</h1>
+        <p class="py-8 text-2xl font-normal">Remarkable results. Easier than email. Postcard marketing <br> reinvented for modern ecommerce.</p>
+        <button class="nav_styles py-3 px-12">TRY IT RISK-FREE</button> <!--Here the class "nav_styles is imported from input.css file where i have created a custom color for btn"-->
+        <ul class="flex relative ml-72 mt-[-50px]">
+          <li><img src="/img/fivepointstar.png" class="w-[22px]" alt="" srcset=""></li>
+          <li><img src="/img/fivepointstar.png" class="w-[22px] ml-2" alt="" srcset=""></li>
+          <li><img src="/img/fivepointstar.png" class="w-[22px] ml-2" alt="" srcset=""></li>
+          <li><img src="/img/fivepointstar.png" class="w-[22px] ml-2" alt="" srcset=""></li>
+          <li><img src="/img/fivepointstar.png" class="w-[22px] ml-2" alt="" srcset=""></li>
+        </ul>
+        <p class="ml-[295px] font-medium mt-1">5.0 Shopify Rating</p>
+      </div>
+
+      <div class="w-[40%] relative"> <!--Right Side Section-->
+        <!--Here a profile will be shown and on the front of the stack-->
+        <section class="bg-white w-60 absolute mt-40 ml-[140px] z-10 flex px-2 py-1 rounded-xl border-black border-2">
+          <img class="h-20 w-20 rounded-full" src="/img/myimg.PNG" alt="profile photo" srcset="">
+          <p class="font-medium text-xl ml-8 mt-2">180 day<br> win-back</p>
+        </section>
+        <!--Secondary Photo behind the profile-->
+        <img class="mt-24 absolute w-[500px] h-[300px] -rotate-45 rounded-lg ml-[200px] shadow-2xl shadow-black" src="/img/table.jpg" alt="" srcset="">
+        <!--Third will be the menu on the right bottom corner in hero section-->
+        <img class="w-[150px] h-[150px] ml-[450px] mt-[420px] absolute z-1" src="/img/menu.avif" alt="" srcset="">
+      </div>
+
+    </div>
+
+
+  </div>
+</body>
+</html>
