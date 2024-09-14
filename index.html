@@ -5,6 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./index.css" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .grid_properties {
+        border-radius: 10px;
+        padding: 50px;
+      }
+    }
+  </style>
   <script>
     tailwind.config = {
       theme: {
@@ -236,19 +244,21 @@
       </div>
 
       <!--Here is the grid that contains 6 items-->
-      <div class="p-10">
+      <div class="p-10 grid grid-cols-3 grid-rows-[420px_420px] mx-32 gap-4">
 
         <!--1st Grid-->
-        <div class="bg-gridFirstColor">
+        <div class="bg-gridFirstColor grid_properties">
           <div>
             <p>Here will be 3 images</p>
           </div>
-          <h1>A header</h1>
-          <p>Some information</p>
+          <h1>Plug-and-play with<br> your stack</h1>
+          <p>Native integration provide seamless<br>
+          segmentation, automation & tracking. No <br>
+          clunky spreadsheets.</p>
         </div>
 
         <!--2nd Grid-->
-        <div>
+        <div class="bg-gridSecondColor grid_properties">
           <div>
             <p>an image</p>
           </div>
@@ -257,7 +267,7 @@
         </div>
 
         <!--3rd Grid-->
-        <div>
+        <div class="bg-gridThirdColor grid_properties">
           <div>
             <p>a 2 row and 2 colum grid</p>
           </div>
@@ -266,7 +276,7 @@
         </div>
 
         <!--4th Grid-->
-        <div>
+        <div class="bg-gridFourthColor grid_properties">
           <div>
             <p>as usual an image</p>
           </div>
@@ -275,7 +285,7 @@
         </div>
 
         <!--5th Grid-->
-        <div>
+        <div class="bg-gridFifthColor grid_properties">
           <div>
             <p>an image as we say earlier</p>
           </div>
@@ -284,7 +294,7 @@
         </div>
 
         <!--6th Grid-->
-        <div>
+        <div class="bg-gridSixthColor grid_properties">
           <div>
             <!--Well, we can make a flex column to stack on over other-->
             <p>3 items stack on to other</p>
