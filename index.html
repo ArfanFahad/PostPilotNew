@@ -7,6 +7,7 @@
   <script src="./script.js" defer></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./tailwind.config.js"></script>
   <style type="text/tailwindcss">
     @layer utilities {
       .grid_properties {
@@ -50,19 +51,19 @@
   <div>
 
 
-    <div class="lg:hidden md:hidden max-sm:text-center max-sm:mt-4">
+    <div class="md:hidden text-center mt-4">
       <button onclick="hide()"><i class="fa-solid fa-bars"></i></button>
     </div>
     <!--Navbar section-->
-    <nav class="lg:flex md:flex md:justify-between lg:justify-between lg:px-10 lg:py-5">
-        <img src="./logo/logo.png " class="lg:h-24 md:h-28 max-sm:h-20 max-sm:ml-32" alt="" srcset="">
-        <ul id="navbar_list" class="max-sm:flex-col max-sm:text-center max-sm:mb-8 lg:flex md:flex md:items-center md:gap-5 md:list-none md:mr-10 lg:items-center lg:gap-5 lg:list-none">
-          <li class="max-sm:px-4 max-sm:py-2"><a href="" class="max-sm:rounded-full max-sm:px-4 max-sm:py-2 max-sm:text-black max-sm:hover:bg-gray-300 max-sm:hover:text-black max-sm:duration-300">Resources</a></li>
-          <li class="max-sm:px-4 max-sm:py-2"><a href="" class="max-sm:rounded-full max-sm:px-4 max-sm:py-2 max-sm:text-black max-sm:hover:bg-gray-300 max-sm:hover:text-black max-sm:duration-300">Sucess stories</a></li>
-          <li class="max-sm:px-4 max-sm:py-2"><a href="" class="max-sm:rounded-full max-sm:px-4 max-sm:py-2 max-sm:text-black max-sm:hover:bg-gray-300 max-sm:hover:text-black max-sm:duration-300">Company</a></li>
-          <li class="max-sm:px-4 max-sm:py-2"><a href="" class="max-sm:rounded-full max-sm:px-4 max-sm:py-2 max-sm:text-black max-sm:hover:bg-gray-300 max-sm:hover:text-black max-sm:duration-300">Pricing</a></li>
-          <li class="max-sm:px-4 max-sm:py-2"><a href=""><button class="max-sm:bg-blue-500 max-sm:rounded-full max-sm:px-4 max-sm:py-2 max-sm:text-white max-sm:hover:bg-gray-300 max-sm:hover:text-black max-sm:duration-300 md:bg-gray-200 md:text-cyan-950 md:px-5 md:py-1.5 md:rounded-full md:hover:bg-gray-400 md:hover:text-white md:hover:duration-300 lg:border lg:border-black lg:px-4 lg:py-1 lg:rounded-lg lg:shadow-post_shadow lg:hover:bg-post lg:duration-500 lg:hover:text-white">Login</button></a></li>
-          <li class="max-sm:px-4 max-sm:py-2"><a href=""><button class="max-sm:bg-blue-500 max-sm:rounded-full max-sm:px-4 max-sm:py-2 max-sm:text-white max-sm:hover:bg-gray-300 max-sm:hover:text-black max-sm:duration-300 md:bg-gray-200 md:text-cyan-950 md:px-5 md:py-1.5 md:rounded-full md:hover:bg-gray-400 md:hover:text-white md:hover:duration-300 lg:px-5 lg:py-1.5 lg:rounded-lg lg:bg-post lg:text-white lg:shadow-post_shadow lg:border lg:border-black lg:hover:bg-white lg:duration-500 lg:hover:text-black">Create free account</button></a></li>
+    <nav class="md:flex md:justify-between md:px-10 md:py-5">
+        <img src="./logo/logo.png" class="md:h-20 h-10 mt-[-15px]" alt="" srcset="">
+        <ul id="navbar_list" class="flex flex-col text-center md:flex md:flex-row md:text-center md:mb-8 md:items-center md:list-none">
+          <li class="px-4 py-2"><a href="">Sucess stories</a></li>
+          <li class="px-4 py-2"><a href="">Company</a></li>
+          <li class="px-4 py-2"><a href="">Resources</a></li>
+          <li class="px-4 py-2"><a href="">Pricing</a></li>
+          <li class="px-4 py-2"><a href=""><button class="max-sm:bg-blue-500 max-sm:rounded-full max-sm:px-4 max-sm:py-2 max-sm:text-white max-sm:hover:bg-gray-300 max-sm:hover:text-black max-sm:duration-300 md:bg-gray-200 md:text-cyan-950 md:px-5 md:py-1.5 md:rounded-full md:hover:bg-gray-400 md:hover:text-white md:hover:duration-300 lg:border lg:border-black lg:px-4 lg:py-1 lg:rounded-lg lg:shadow-post_shadow lg:hover:bg-post lg:duration-500 lg:hover:text-white">Login</button></a></li>
+          <li class="px-4 py-2"><a href=""><button class="max-sm:bg-blue-500 max-sm:rounded-full max-sm:px-4 max-sm:py-2 max-sm:text-white max-sm:hover:bg-gray-300 max-sm:hover:text-black max-sm:duration-300 md:bg-gray-200 md:text-cyan-950 md:px-5 md:py-1.5 md:rounded-full md:hover:bg-gray-400 md:hover:text-white md:hover:duration-300 lg:px-5 lg:py-1.5 lg:rounded-lg lg:bg-post lg:text-white lg:shadow-post_shadow lg:border lg:border-black lg:hover:bg-white lg:duration-500 lg:hover:text-black">Create free account</button></a></li>
         </ul>
     </nav>
     <!--Nav section done-->
@@ -70,7 +71,7 @@
 
     <!--Hero Section-->
     <!--First I have to declare two different main div, one is for left and one for right-->
-    <div class="flex flex-row bg-heroColor px-16 py-10">
+    <div class=" lg:flex flex-row bg-heroColor px-16 py-10">
 
       <div class="w-[60%] p-8"> <!--Left Side Section-->
         <h1 class="text-8xl font-bold relative">Meet your <br> <span class="font-extrabold italic text-heroDeep">favourite</span> new (old) marketing channel.</h1>

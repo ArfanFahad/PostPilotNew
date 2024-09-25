@@ -3,6 +3,10 @@
 //   content: ["./src/**/*.{html,js}"],
 //   theme: {
 //     extend: {
+//         screen: {
+//             'min-640': '640px',
+//             'max-768': {'max': '768px'},
+//         },
 //       colors: {
 //         'post': '#ff6d2c',
 //         'heroColor': '#E0F8F2',
