@@ -71,7 +71,7 @@
 
     <!--Hero Section-->
     <!--First I have to declare two different main div, one is for left and one for right-->
-    <div class=" lg:flex flex-row bg-heroColor px-16 py-10">
+    <div class="lg:flex bg-heroColor px-16 py-10">
 
       <div class="md:w-[60%] md:p-8"> <!--Left Side Section-->
         <h1 class="text-lg md:text-8xl md:font-bold md:relative">Meet your <br class="hidden"> <span class="md:font-extrabold md:italic md:text-heroDeep">favourite</span> new (old) marketing channel.</h1>
@@ -87,16 +87,16 @@
         <p class="ml-[215px] font-medium mt-1">5.0 Shopify Rating</p>
       </div>
 
-      <div class="md:w-[40%] md:relative"> <!--Right Side Section-->
+      <div class="hidden lg:block lg:w-[40%] lg:relative"> <!--Right Side Section-->
         <!--Here a profile will be shown and on the front of the stack-->
-        <section class="bg-white md:w-60 md:absolute md:mt-40 md:ml-[140px] md:z-10 md:flex md:px-2 md:py-1 md:rounded-xl md:border-black md:border-2">
-          <img class="hidden md:h-20 md:w-20 md:rounded-full" src="./img/myimg.PNG" alt="profile photo" srcset="">
-          <p class="hidden md:font-medium md:text-xl md:ml-8 md:mt-2">180 day<br> win-back</p>
+        <section class="bg-white w-60 absolute mt-40 ml-[140px] z-10 flex px-2 md:py-1 rounded-xl border-black border-2">
+          <img class=" h-20 w-20 rounded-full" src="./img/myimg.PNG" alt="profile photo" srcset="">
+          <p class=" font-medium text-xl ml-8 mt-2">180 day<br> win-back</p>
         </section>
         <!--Secondary Photo behind the profile-->
-        <img class="hidden md:mt-24 md:absolute md:w-[400px] md:h-[300px] md:-rotate-45 md:rounded-lg md:ml-[200px] md:shadow-2xl md:shadow-black" src="./img/table.jpg" alt="" srcset="">
+        <img class="mt-24 absolute w-[400px] h-[300px] -rotate-45 rounded-lg ml-[200px] shadow-2xl shadow-black" src="./img/table.jpg" alt="" srcset="">
         <!--Third will be the menu on the right bottom corner in hero section-->
-        <img class="hidden md:w-[150px] md:h-[150px] md:ml-[450px] md:mt-[420px] md:absolute md:z-1" src="./img/menu.avif" alt="" srcset="">
+        <img class="w-[150px] h-[150px] ml-[450px] mt-[420px] absolute z-1" src="./img/menu.avif" alt="" srcset="">
       </div>
 
     </div>
@@ -106,9 +106,9 @@
         I am going to create 2 different div. On 1st div I am
         going to write the headline and make enough padding.
         On 2nd div I am going to create 3 card using flex-->
-    <div class="p-20 bg-white">
+    <div class="lg:p-20 lg:bg-white">
 
-        <div class="pb-20 text-8xl text-center font-bold">
+        <div class="text-3xl text-center p-10 lg:pb-20 lg:text-8xl lg:text-center lg:font-bold">
           <h1>Trusted by thousands <br> of top DTC <span class="font-extrabold italic text-heroDeep">brands</span></h1>
         </div>
 
