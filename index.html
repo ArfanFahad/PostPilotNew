@@ -1,11 +1,14 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./index.css" rel="stylesheet">
   <script src="./script.js" defer></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="./tailwind.config.js"></script>
   <style type="text/tailwindcss">
@@ -20,29 +23,30 @@
     tailwind.config = {
       theme: {
         extend: {
-      colors: {
-        'post': '#ff6d2c',
-        'heroColor': '#E0F8F2',
-        'heroDeep': '#78aea0',
-        'longHero': '#fdf3ea',
-        'borderColor': '#d1c7be',
-        'gridFirstColor': '#fdf3ea',
-        'gridSecondColor': '#e0f8f2',
-        'gridThirdColor': '#eeecff',
-        'gridFourthColor': '#d9f2f7',
-        'gridFifthColor': '#faeded',
-        'gridSixthColor': '#f1f1f1',
-        'fastLaunchColor': '#9ba8aa',
-        'fastLaunchNumberColor': '#88d0cb',
-      }, 
-      boxShadow: {
-         'post_shadow': '2px 2px 0px 2px black',
-      },
-    },
+          colors: {
+            'post': '#ff6d2c',
+            'heroColor': '#E0F8F2',
+            'heroDeep': '#78aea0',
+            'longHero': '#fdf3ea',
+            'borderColor': '#d1c7be',
+            'gridFirstColor': '#fdf3ea',
+            'gridSecondColor': '#e0f8f2',
+            'gridThirdColor': '#eeecff',
+            'gridFourthColor': '#d9f2f7',
+            'gridFifthColor': '#faeded',
+            'gridSixthColor': '#f1f1f1',
+            'fastLaunchColor': '#9ba8aa',
+            'fastLaunchNumberColor': '#88d0cb',
+          },
+          boxShadow: {
+            'post_shadow': '2px 2px 0px 2px black',
+          },
+        },
       }
     }
   </script>
 </head>
+
 <body>
 
 
@@ -56,15 +60,20 @@
     </div>
     <!--Navbar section-->
     <nav class="md:flex md:justify-between md:px-10 md:py-5">
-        <img src="./logo/logo.png" class="max-sm:m-auto max-md:m-auto md:h-20 h-14 mt-[-15px]" alt="" srcset="">
-        <ul id="navbar_list" class="flex flex-col text-center md:flex md:flex-row md:text-center md:mb-8 md:items-center md:list-none">
-          <li class="px-4 py-2"><a href="">Sucess stories</a></li>
-          <li class="px-4 py-2"><a href="">Company</a></li>
-          <li class="px-4 py-2"><a href="">Resources</a></li>
-          <li class="px-4 py-2"><a href="">Pricing</a></li>
-          <li class="px-4 py-2"><a href=""><button class="max-sm:bg-blue-500 max-sm:rounded-full max-sm:px-4 max-sm:py-2 max-sm:text-white max-sm:hover:bg-gray-300 max-sm:hover:text-black max-sm:duration-300 md:bg-gray-200 md:text-cyan-950 md:px-5 md:py-1.5 md:rounded-full md:hover:bg-gray-400 md:hover:text-white md:hover:duration-300 lg:border lg:border-black lg:px-4 lg:py-1 lg:rounded-lg lg:shadow-post_shadow lg:hover:bg-post lg:duration-500 lg:hover:text-white">Login</button></a></li>
-          <li class="px-4 py-2"><a href=""><button class="max-sm:bg-blue-500 max-sm:rounded-full max-sm:px-4 max-sm:py-2 max-sm:text-white max-sm:hover:bg-gray-300 max-sm:hover:text-black max-sm:duration-300 md:bg-gray-200 md:text-cyan-950 md:px-5 md:py-1.5 md:rounded-full md:hover:bg-gray-400 md:hover:text-white md:hover:duration-300 lg:px-5 lg:py-1.5 lg:rounded-lg lg:bg-post lg:text-white lg:shadow-post_shadow lg:border lg:border-black lg:hover:bg-white lg:duration-500 lg:hover:text-black">Create free account</button></a></li>
-        </ul>
+      <img src="./logo/logo.png" class="max-sm:m-auto max-md:m-auto md:h-20 h-14 mt-[-15px]" alt="" srcset="">
+      <ul id="navbar_list"
+        class="flex flex-col text-center md:flex md:flex-row md:text-center md:mb-8 md:items-center md:list-none">
+        <li class="px-4 py-2 hover:scale-125 transition-transform duration-300"><a href="">Sucess stories</a></li>
+        <li class="px-4 py-2"><a href="">Company</a></li>
+        <li class="px-4 py-2"><a href="">Resources</a></li>
+        <li class="px-4 py-2"><a href="">Pricing</a></li>
+        <li class="px-4 py-2"><a href=""><button
+              class="max-sm:bg-blue-500 max-sm:rounded-full max-sm:px-4 max-sm:py-2 max-sm:text-white max-sm:hover:bg-gray-300 max-sm:hover:text-black max-sm:duration-300 md:bg-gray-200 md:text-cyan-950 md:px-5 md:py-1.5 md:rounded-full md:hover:bg-gray-400 md:hover:text-white md:hover:duration-300 lg:border lg:border-black lg:px-4 lg:py-1 lg:rounded-lg lg:shadow-post_shadow lg:hover:bg-post lg:duration-500 lg:hover:text-white">Login</button></a>
+        </li>
+        <li class="px-4 py-2"><a href=""><button
+              class="max-sm:bg-blue-500 max-sm:rounded-full max-sm:px-4 max-sm:py-2 max-sm:text-white max-sm:hover:bg-gray-300 max-sm:hover:text-black max-sm:duration-300 md:bg-gray-200 md:text-cyan-950 md:px-5 md:py-1.5 md:rounded-full md:hover:bg-gray-400 md:hover:text-white md:hover:duration-300 lg:px-5 lg:py-1.5 lg:rounded-lg lg:bg-post lg:text-white lg:shadow-post_shadow lg:border lg:border-black lg:hover:bg-white lg:duration-500 lg:hover:text-black">Create
+              free account</button></a></li>
+      </ul>
     </nav>
     <!--Nav section done-->
 
@@ -73,28 +82,42 @@
     <!--First I have to declare two different main div, one is for left and one for right-->
     <div class="lg:flex bg-heroColor px-16 py-10">
 
-      <div class="ml-8 lg:w-[60%] lg:p-8"> <!--Left Side Section-->
-        <h1 class="text-lg md:text-8xl md:font-bold md:relative">Meet your <br class="hidden"> <span class="md:font-extrabold md:italic md:text-heroDeep">favourite</span> new (old) marketing channel.</h1>
-        <p class="py-8 text-2xl font-normal">Remarkable results. Easier than email. Postcard marketing <br> reinvented for modern ecommerce.</p>
-        <button class="px-5 py-1.5 rounded-lg bg-post text-white shadow-post_shadow border border-black hover:bg-white duration-500 hover:text-black">TRY IT RISK-FREE</button> <!--Here the class "nav_styles is imported from input.css file where i have created a custom color for btn"-->
-        <ul class="flex relative ml-52 mt-[-40px]">
-          <li><img src="./img/fivepointstar.png" class="w-[22px]" alt="" srcset=""></li>
-          <li><img src="./img/fivepointstar.png" class="w-[22px] ml-2" alt="" srcset=""></li>
-          <li><img src="./img/fivepointstar.png" class="w-[22px] ml-2" alt="" srcset=""></li>
-          <li><img src="./img/fivepointstar.png" class="w-[22px] ml-2" alt="" srcset=""></li>
-          <li><img src="./img/fivepointstar.png" class="w-[22px] ml-2" alt="" srcset=""></li>
-        </ul>
-        <p class="ml-[215px] font-medium mt-1">5.0 Shopify Rating</p>
+      <div class="lg:w-[60%] lg:p-8 w-full text-center md:text-left"> <!--Left Side Section-->
+        <h1 class="text-lg md:text-8xl md:font-bold md:relative">Meet your <br class="hidden"> <span
+            class="md:font-extrabold md:italic md:text-heroDeep">favourite</span> new (old) marketing channel.</h1>
+        <p class="py-8 text-2xl font-normal">Remarkable results. Easier than email. Postcard marketing <br> reinvented
+          for modern ecommerce.</p>
+
+        <div class="flex flex-col md:flex-row gap-5 items-center ">
+          <button
+            class="px-5 py-1.5 max-w-48 rounded-lg bg-post text-white shadow-post_shadow border border-black hover:bg-white duration-500 hover:text-black">TRY
+            IT RISK-FREE</button>
+          <!--Here the class "nav_styles is imported from input.css file where i have created a custom color for btn"-->
+
+          <div>
+            <ul class="flex">
+              <li><img src="./img/fivepointstar.png" class="w-[22px]" alt="" srcset=""></li>
+              <li><img src="./img/fivepointstar.png" class="w-[22px] ml-2" alt="" srcset=""></li>
+              <li><img src="./img/fivepointstar.png" class="w-[22px] ml-2" alt="" srcset=""></li>
+              <li><img src="./img/fivepointstar.png" class="w-[22px] ml-2" alt="" srcset=""></li>
+              <li><img src="./img/fivepointstar.png" class="w-[22px] ml-2" alt="" srcset=""></li>
+            </ul>
+            <p class="font-medium mt-1">5.0 Shopify Rating</p>
+          </div>
+        </div>
+
       </div>
 
       <div class="hidden lg:block lg:w-[40%] lg:relative"> <!--Right Side Section-->
         <!--Here a profile will be shown and on the front of the stack-->
-        <section class="bg-white w-60 absolute mt-40 ml-[140px] z-10 flex px-2 md:py-1 rounded-xl border-black border-2">
+        <section
+          class="bg-white w-60 absolute mt-40 ml-[140px] z-10 flex px-2 md:py-1 rounded-xl border-black border-2">
           <img class=" h-20 w-20 rounded-full" src="./img/myimg.PNG" alt="profile photo" srcset="">
           <p class=" font-medium text-xl ml-8 mt-2">180 day<br> win-back</p>
         </section>
         <!--Secondary Photo behind the profile-->
-        <img class="mt-24 absolute w-[400px] h-[300px] -rotate-45 rounded-lg ml-[200px] shadow-2xl shadow-black" src="./img/table.jpg" alt="" srcset="">
+        <img class="mt-24 absolute w-[400px] h-[300px] -rotate-45 rounded-lg ml-[200px] shadow-2xl shadow-black"
+          src="./img/table.jpg" alt="" srcset="">
         <!--Third will be the menu on the right bottom corner in hero section-->
         <img class="w-[150px] h-[150px] ml-[450px] mt-[420px] absolute z-1" src="./img/menu.avif" alt="" srcset="">
       </div>
@@ -108,28 +131,30 @@
         On 2nd div I am going to create 3 card using flex-->
     <div class="lg:p-20 lg:bg-white">
 
-        <div class="text-3xl text-center p-10 lg:pb-20 lg:text-8xl lg:text-center lg:font-bold">
-          <h1>Trusted by thousands <br> of top DTC <span class="font-extrabold italic text-heroDeep">brands</span></h1>
-        </div>
+      <div class="text-3xl text-center p-10 lg:pb-20 lg:text-8xl lg:text-center lg:font-bold">
+        <h1>Trusted by thousands <br> of top DTC <span class="font-extrabold italic text-heroDeep">brands</span></h1>
+      </div>
 
-        <div class="flex flex-col text-center justify-evenly items-center lg:flex lg:flex-row lg:py-0 lg:px-20 lg:justify-around">
-          <div>
-            <img src="./hero_img/rungum.PNG" alt="" srcset="">
-            <h1 class="text-5xl text-center py-3.5"><span class="italic font-bold">RUN</span>GUM</h1>
-          </div>
-          <div>
-            <img src="./hero_img/beardbrand.PNG" alt="" srcset="">
-            <h1 class="text-5xl py-3.5">Beardbrand <i><img class="w-[30px] ml-[255px] mt-[-40px] absolute" src="./hero_img/apple.svg" alt="" srcset=""></i></h1>
-          </div>
-          <div>
-            <img src="./hero_img/promix.PNG" alt="" srcset="">
-            <h1 class="text-5xl text-center py-3.5">PROMIX</h1>
-          </div>
-          <div>
-            <img src="./hero_img/scotch.PNG" alt="" srcset="">
-            <h1 class="text-5xl text-center py-3.5">Raymond</h1>
-          </div>
+      <div
+        class="flex flex-col text-center justify-evenly items-center lg:flex lg:flex-row lg:py-0 lg:px-20 lg:justify-around">
+        <div>
+          <img src="./hero_img/rungum.PNG" alt="" srcset="">
+          <h1 class="text-5xl text-center py-3.5"><span class="italic font-bold">RUN</span>GUM</h1>
         </div>
+        <div>
+          <img src="./hero_img/beardbrand.PNG" alt="" srcset="">
+          <h1 class="text-5xl py-3.5">Beardbrand <i><img class="w-[30px] ml-[255px] mt-[-40px] absolute"
+                src="./hero_img/apple.svg" alt="" srcset=""></i></h1>
+        </div>
+        <div>
+          <img src="./hero_img/promix.PNG" alt="" srcset="">
+          <h1 class="text-5xl text-center py-3.5">PROMIX</h1>
+        </div>
+        <div>
+          <img src="./hero_img/scotch.PNG" alt="" srcset="">
+          <h1 class="text-5xl text-center py-3.5">Raymond</h1>
+        </div>
+      </div>
 
     </div>
 
@@ -141,7 +166,7 @@
         <h1>Why use direct mail? <br> It <span class="text-heroDeep">works</span> like crazy.</h1>
       </div>
 
-      <div class="hidden lg:flex lg:justify-around lg:py-20 lg:items-center">
+      <div class="flex flex-col md:flex-row gap-10 justify-around lg:py-20 items-center">
 
         <div class="text-center">
           <h1 class="text-9xl font-bold">28X</h1>
@@ -150,8 +175,10 @@
 
         <div class="text-center">
           <div class="flex gap-4 items-end p-4">
-            <div class="h-[250px] rounded-lg p-3 bg-post text-white content-end text-xl shadow-post_shadow"><span class="font-bold">90%</span> <br> Direct mail</div>
-            <div class="h-[70px] rounded-lg w-[120px] bg-heroDeep content-center text-lg shadow-post_shadow">20% <br> Email</div>
+            <div class="h-[250px] rounded-lg p-3 bg-post text-white content-end text-xl shadow-post_shadow"><span
+                class="font-bold">90%</span> <br> Direct mail</div>
+            <div class="h-[70px] rounded-lg w-[120px] bg-heroDeep content-center text-lg shadow-post_shadow">20% <br>
+              Email</div>
           </div>
           <p>Your messages get read</p>
         </div>
@@ -184,7 +211,8 @@
 
 
     <div class="lg:bg-longHero lg:p-16 lg:text-8xl lg:text-center lg:font-bold text-2xl p-10 text-justify">
-      <h1>PostPilot makes it a <span class="italic text-heroDeep">cinch</span> to send personalized, profit-<br class="hidden">generating postcards.</h1>
+      <h1>PostPilot makes it a <span class="italic text-heroDeep">cinch</span> to send personalized, profit-<br
+          class="hidden">generating postcards.</h1>
     </div>
 
     <!--Long Hero Section-->
@@ -193,28 +221,33 @@
       <div>
         <!--First text-->
         <div class="lg:mt-28 text-xl">
-          <h1 class="text-2xl lg:text-7xl lg:font-bold"><span class="italic text-heroDeep">Powerful</span><br>acquision<br>& retention</h1>
-          <p class="lg:text-xl lg:ml-[-30px] lg:p-10">Send one-off or triggered campaigns to customers<br> & prospects. Target eamil leads with MailMatch TM.</p>
+          <h1 class="text-2xl lg:text-7xl lg:font-bold"><span
+              class="italic text-heroDeep">Powerful</span><br>acquision<br>& retention</h1>
+          <p class="lg:text-xl lg:ml-[-30px] lg:p-10">Send one-off or triggered campaigns to customers<br> & prospects.
+            Target eamil leads with MailMatch TM.</p>
           <div class="lg:border-4 lg:border-borderColor lg:relative lg:inline-block lg:p-10 hidden">
             <p>
               <span class="text-8xl absolute mt-[-74px] bg-longHero">''</span>
-                <p>It's like Klaviyo for direct mail. The result are absolutely insane<br></p>
-                <span>Ash Melwani, CMO</span>
+            <p>It's like Klaviyo for direct mail. The result are absolutely insane<br></p>
+            <span>Ash Melwani, CMO</span>
             </p>
           </div>
         </div>
 
         <!--Second Text-->
         <div class="lg:mt-20 lg:p-10 lg:flex lg:flex-col flex flex-col lg:items-end mt-10">
-          <h1 class="text-center lg:text-7xl lg:font-bold lg:items-end lg:text-center"><span class="italic text-heroDeep">Fight Back</span>against iOS <br>updates, jacked up <br> CPCs & spam folders</h1>
-          <p class="text-xl ml-1 p-10">Deliver your message to <span class="italic">all</span>of your customers - for less than the <br>cost of a click. </p>
-          <div  class="lg:border-4 lg:border-borderColor lg:relative lg:inline-block lg:p-10 hidden">
+          <h1 class="text-center lg:text-7xl lg:font-bold lg:items-end lg:text-center"><span
+              class="italic text-heroDeep">Fight Back</span>against iOS <br>updates, jacked up <br> CPCs & spam folders
+          </h1>
+          <p class="text-xl ml-1 p-10">Deliver your message to <span class="italic">all</span>of your customers - for
+            less than the <br>cost of a click. </p>
+          <div class="lg:border-4 lg:border-borderColor lg:relative lg:inline-block lg:p-10 hidden">
             <p class="">
               <span class="text-8xl absolute mt-[-74px] bg-longHero">''</span>
-                PostPilot is our new weapon against sinking email engagement and rising <br>
-                PPC costs. The result and ROI have been outstanding. It's now one of our <br>
-                core marketing channels to increase acquisition & LTV.
-                <span>Leah Keith, GM</span>
+              PostPilot is our new weapon against sinking email engagement and rising <br>
+              PPC costs. The result and ROI have been outstanding. It's now one of our <br>
+              core marketing channels to increase acquisition & LTV.
+              <span>Leah Keith, GM</span>
             </p>
           </div>
         </div>
@@ -223,20 +256,22 @@
         <div class="lg:mt-28">
           <h1 class="text-xl mt-10 lg:text-7xl lg:font-bold">Done for <span class="italic text-heroDeep">you</span></h1>
           <p class="text-xl ml-[-30px] p-10">From design & strategy to stamp-licking, our ecom <br>
-          experts help you every step of the way.</p>
+            experts help you every step of the way.</p>
           <div class="lg:border-4 lg:border-borderColor lg:relative lg:inline-block lg:p-10 hidden">
             <p class="">
               <span class="text-8xl absolute mt-[-74px] bg-longHero">''</span>
-                <p>The team is so knowledgeable and beyond helpful.<br>
-                   I'm blown away by their communication, detail and<br>
-                  attentiveness and always feel like they have our best <br>
-                interest in mind. Definitely worth a try.</p>
-                <span>Holly Davies, Marketing Director</span>
+            <p>The team is so knowledgeable and beyond helpful.<br>
+              I'm blown away by their communication, detail and<br>
+              attentiveness and always feel like they have our best <br>
+              interest in mind. Definitely worth a try.</p>
+            <span>Holly Davies, Marketing Director</span>
             </p>
           </div>
         </div>
 
-        <button class="mt-10 px-5 py-1.5 rounded-lg bg-post text-white shadow-post_shadow border border-black hover:bg-white duration-500 hover:text-black">TRY IT RISK-FREE</button>
+        <button
+          class="mt-10 px-5 py-1.5 rounded-lg bg-post text-white shadow-post_shadow border border-black hover:bg-white duration-500 hover:text-black">TRY
+          IT RISK-FREE</button>
 
       </div>
 
@@ -247,7 +282,9 @@
     <section>
       <!--This is the header of the grid-->
       <div>
-        <h1 class="text-center p-10 lg:p-16 lg:text-7xl lg:text-center lg:font-bold">Everything your brand needs to <br><span class="text-heroDeep italic">make your brand unforgettable</span></h1>
+        <h1 class="text-center p-10 lg:p-16 lg:text-7xl lg:text-center lg:font-bold">Everything your brand needs to
+          <br><span class="text-heroDeep italic">make your brand unforgettable</span>
+        </h1>
       </div>
 
       <!--Here is the grid that contains 6 items-->
@@ -255,21 +292,21 @@
 
         <!--1st Grid-->
         <div class="bg-gridFirstColor grid_properties text-center">
-          <div class="flex flex-row justify-around py-8">
+          <div class="flex flex-col md:flex-row items-center gap-5 justify-around py-8">
             <img class="w-36 rounded-full" src="./grid_img/1st grid img/apex logo.png" alt="Apex Shoe">
             <img class="w-28 rounded-full" src="./grid_img/1st grid img/shoe.avif" alt="only a shoe">
             <img class="w-36 rounded-full" src="./grid_img/1st grid img/offer.png" alt="apex offer">
           </div>
           <h1 class="font-bold text-2xl">Plug-and-play with<br> your stack</h1>
           <p class="text-lg">Native integration provide seamless<br>
-          segmentation, automation & tracking. No <br>
-          clunky spreadsheets.</p>
+            segmentation, automation & tracking. No <br>
+            clunky spreadsheets.</p>
         </div>
 
         <!--2nd Grid-->
         <div class="bg-gridSecondColor grid_properties text-center">
           <!--This is the div which is reactangle-->
-          <div class="border-2 border-black rounded-lg p-5 bg-white"> 
+          <div class="border-2 border-black rounded-lg p-5 bg-white">
 
             <div class="flex gap-2">
               <div>
@@ -305,7 +342,7 @@
           <div class="p-5">
             <h1 class="text-4xl font-bold">Run campaigns <br>on autopilot</h1>
             <p class="text-lg mt-2">Ink profits while you sleep: Just set it and <br>
-            forget it.</p>
+              forget it.</p>
           </div>
 
         </div>
@@ -335,8 +372,8 @@
           <div class="text-center p-2">
             <h1 class="text-2xl font-bold">Real-time ROI dashboard</h1>
             <p class="text-xl">Track performance of every postcard by<br>
-            customer or discount code. Your CFO will <br>
-            love it</p>
+              customer or discount code. Your CFO will <br>
+              love it</p>
           </div>
 
         </div>
@@ -362,8 +399,8 @@
           <div class="text-center p-8">
             <h1 class="text-2xl font-bold">Predictable pricing</h1>
             <p class="text-xl">Unlike CPCs, postage rates dont' change<br>
-            based on competitions or who you're<br>
-            targeting.</p>
+              based on competitions or who you're<br>
+              targeting.</p>
           </div>
         </div>
 
@@ -391,17 +428,17 @@
               concierge service
             </h1>
             <p class="text-xl mt-2">DTC is in our DNA. Our pros will build your<br>
-            strategy and custom designs using battle-<br>
-            tested best practices.</p>
+              strategy and custom designs using battle-<br>
+              tested best practices.</p>
           </div>
 
         </div>
-          
-    
+
+
       </div>
     </section>
 
-    
+
     <!--Fast Launch. Fast results.-->
     <section class="lg:bg-gridFourthColor lg:p-20 hidden">
 
@@ -427,8 +464,8 @@
           <div>
             <h1 class="font-bold  mt-8">Send</h1>
             <p>One-off announcements or automatically <br>
-            triggered flows. Customers receive their<br>
-            personalized cards within a week.</p>
+              triggered flows. Customers receive their<br>
+              personalized cards within a week.</p>
           </div>
           <div class="text-fastLaunchColor mt-40">Convert</div>
         </div>
@@ -436,7 +473,7 @@
       </div>
 
     </section>
-  
+
 
     <!--Link Section-->
     <section>
@@ -446,8 +483,8 @@
         <div>
           <img class="lg:w-28 w-20 ml-56 p-4" src="./footer_logo/bird.png" alt="" srcset="">
           <p class="lg:font-normal lg:text-xl lg:mt-4 ml-28">Our paper is sourced from FSC-certified<br>
-          mills. We plant enough trees to more than <br>
-          double our paper usage.</p>
+            mills. We plant enough trees to more than <br>
+            double our paper usage.</p>
         </div>
 
         <div class="lg:text-2xl ml-40 text-lg">
@@ -462,7 +499,7 @@
         </div>
 
         <div class="ml-20 lg:text-2xl">
-          <ul  class="lg:flex lg:flex-col lg:gap-4">
+          <ul class="lg:flex lg:flex-col lg:gap-4">
             <li class="cursor-pointer">Pricing</li>
             <li class="cursor-pointer" class="cursor-pointer">Reviews</li>
             <li class="cursor-pointer">Direct Mail Academy</li>
@@ -474,17 +511,19 @@
         <div>
           <h1 class="lg:text-2xl ml-20 lg:uppercase lg:font-bold">Contact</h1>
           <div class="lg:flex ml-20 lg:mt-6">
-            <i class="fa-brands fa-facebook-messenger"><span class="lg:ml-2 lg:tracking-widest lg:text-sm">support@postpilot.com</span></i>            
+            <i class="fa-brands fa-facebook-messenger"><span
+                class="lg:ml-2 lg:tracking-widest lg:text-sm">support@postpilot.com</span></i>
           </div>
           <p class="lg:mt-4 ml-20 lg:text-2xl">Printed with <span>❤</span> at our facility in South<br>
             Carolina.</p>
-      </div>
+        </div>
 
     </section>
 
-</div>
+  </div>
 
 
 
 </body>
+
 </html>
